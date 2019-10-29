@@ -1,0 +1,70 @@
+public class Nhiemvu {
+
+	private String maNhiemVu;
+	private String tenNhiemVu;
+	private float thoiGianTH;
+	private String maNV;
+
+	public String getMaNhiemVu() {
+		return this.maNhiemVu;
+	}
+
+	/**
+	 * 
+	 * @param maNhiemVu
+	 */
+	public void setMaNhiemVu(String maNhiemVu) {
+		this.maNhiemVu = maNhiemVu;
+	}
+
+	public String getTenNhiemVu() {
+		return this.tenNhiemVu;
+	}
+
+	/**
+	 * 
+	 * @param tenNhiemVu
+	 */
+	public void setTenNhiemVu(String tenNhiemVu) {
+		this.tenNhiemVu = tenNhiemVu;
+	}
+
+	public float getThoiGianTH() {
+		return this.thoiGianTH;
+	}
+
+	/**
+	 * 
+	 * @param thoiGianTH
+	 */
+	public void setThoiGianTH(float thoiGianTH) {
+		this.thoiGianTH = thoiGianTH;
+	}
+
+	public String getMaNV() {
+		return this.maNV;
+	}
+
+	/**
+	 * 
+	 * @param maNV
+	 */
+	public void setMaNV(String maNV) {
+		this.maNV = maNV;
+	}
+
+	public void getAttribute() {
+		// TODO - implement Nhiemvu.getAttribute
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param attribute
+	 */
+	public void setAttribute(int attribute) {
+		// TODO - implement Nhiemvu.setAttribute
+		throw new UnsupportedOperationException();
+	}
+
+}

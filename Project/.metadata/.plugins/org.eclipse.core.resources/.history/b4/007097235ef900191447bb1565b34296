@@ -1,0 +1,8 @@
+
+public class Nhanvienthuong extends Nhanvien {
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB, int value) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB, value);
+		// TODO Auto-generated constructor stub
+	}	
+}

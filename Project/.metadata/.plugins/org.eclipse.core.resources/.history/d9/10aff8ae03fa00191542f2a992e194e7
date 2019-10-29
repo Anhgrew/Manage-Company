@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+public class Nhanvienthuong extends Nhanvien {
+	private String poSiTion;
+
+	public String getPoSiTion() {
+		return poSiTion;
+	}
+
+	public void setPoSiTion(String poSiTion) {
+		this.poSiTion = poSiTion;
+	}
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB, String string) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB);
+		poSiTion = string;
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,33 @@
+
+import java.util.LinkedList;
+
+public class Phongban {
+	private String tenPB;
+	private String maPB;
+	private LinkedList<Nhanvien> dsNV;
+	public String getTenPB() {
+		return tenPB;
+	}
+	public void setTenPB(String tenPB) {
+		this.tenPB = tenPB;
+	}
+	public String getMaPB() {
+		return maPB;
+	}
+	public void setMaPB(String maPB) {
+		this.maPB = maPB;
+	}
+	public LinkedList<Nhanvien> getDsNV() {
+		return dsNV;
+	}
+	public void setDsNV(LinkedList<Nhanvien> dsNV) {
+		this.dsNV = dsNV;
+	}
+	public Phongban(String tenPB, String maPB, LinkedList<Nhanvien> dsNV) {
+		super();
+		this.tenPB = tenPB;
+		this.maPB = maPB;
+		this.dsNV = dsNV;
+	}
+
+}

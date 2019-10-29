@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+
+public class Nhanvienthuong extends Nhanvien {
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB,
+			LinkedList<Nhiemvu> dsNhiemVu) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB, dsNhiemVu);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

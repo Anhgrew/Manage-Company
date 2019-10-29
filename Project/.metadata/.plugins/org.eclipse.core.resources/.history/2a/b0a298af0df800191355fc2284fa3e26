@@ -1,0 +1,111 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+
+public class Phongban {
+	private String tenPB;
+	private String maPB;
+	private LinkedList<Nhanvien> dsNV;
+
+	public String getTenPB() {
+		return this.tenPB;
+	}
+
+	/**
+	 * 
+	 * @param tenPB
+	 */
+	public void setTenPB(String tenPB) {
+		this.tenPB = tenPB;
+
+	}
+
+	public String getMaPB() {
+		return this.maPB;
+	}
+
+	/**
+	 * 
+	 * @param maPB
+	 */
+	public void setMaPB(String maPB) {
+		this.maPB = maPB;
+	}
+
+	public LinkedList<Nhanvien> getDsNV() {
+		return this.dsNV;
+	}
+
+	/**
+	 * 
+	 * @param dsNV
+	 */
+	public void setDsNV(LinkedList<Nhanvien> dsNV) {
+		this.dsNV = dsNV;
+	}
+
+	public Phongban(String tenPB, String maPB) {
+		this.tenPB = tenPB;
+		this.maPB = maPB;
+	}
+
+	public void readFileNhanVien() {
+		try {
+			FileReader reader = new FileReader("src/DSNV.txt");
+			BufferedReader bufferedReader = new BufferedReader(reader);
+			String line;
+			while ((line = bufferedReader.readLine()) != null) {
+				String[] listInfo = line.split(" # ");
+				Nhanvien nhanVien;
+				if (listInfo[7] != "") {
+					nhanVien = new Nhanvienthuong(listInfo[0], listInfo[1], Integer.parseInt(listInfo[2]), listInfo[3],
+							listInfo[4], listInfo[5]);
+
+				} else {
+					nhanVien = new Truongphong(listInfo[0], listInfo[1], Integer.parseInt(listInfo[2]), listInfo[3],
+							listInfo[4], listInfo[5], listInfo[7]);
+
+				}
+				dsNV.add(nhanVien);
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void readFileNhiemVu() {
+		try {
+			FileReader reader = new FileReader("src/DSNV.txt");
+			BufferedReader bufferedReader = new BufferedReader(reader);
+			String line;
+			Nhiemvu nhiemVu;
+			LinkedList<Nhiemvu> dsMoi = new LinkedList<Nhiemvu>();
+			for (Nhanvien nhanVien : dsNV) {
+				if (dsNV.isEmpty()) {
+					System.out.println("Danh sach nhan vien rong...!");
+					break;
+				}
+				while ((line = bufferedReader.readLine()) != null) {
+					String[] listInfo = line.split(" # ");
+					if (listInfo[3] == nhanVien.getMaNV()) {
+						nhiemVu = new Nhiemvu(listInfo[0], listInfo[1], Float.parseFloat(listInfo[2]), listInfo[3]);
+						dsMoi.add(nhiemVu);
+					}
+				}
+
+				nhanVien.setDsNhiemVu(dsMoi);
+				dsMoi.clear();
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void inPutFile() {
+		readFileNhanVien();
+		readFileNhiemVu();
+	}
+}

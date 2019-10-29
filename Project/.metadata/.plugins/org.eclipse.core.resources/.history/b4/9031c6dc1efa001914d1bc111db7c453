@@ -1,0 +1,17 @@
+
+public class XuLy {
+
+	public static void main(String[] args) {
+		Congty a=new Congty();
+		a.inPutFile();
+		//Tim danh sach nhan vien lam nhieu nhiem vu nhat cong ty
+		a.nhanVienNhieuNVNhat();
+		//Tim danh sach nhan tre nhat va lam nhieu nhiem viec nhat cong ty
+		a.nhanVienTreNhatDangNhieuNVNhat();
+		//Tim phong ban co nhan vien nhan tre nhat
+		a.phongBanCoNVTreNhat();
+		//Xoa nhan vien co id cho truoc
+		a.xoaMotNhanVien("011");
+	}	
+
+}

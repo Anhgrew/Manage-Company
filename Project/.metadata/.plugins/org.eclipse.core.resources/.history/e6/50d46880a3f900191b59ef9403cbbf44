@@ -1,0 +1,12 @@
+
+public class XuLy {
+
+	public static void main(String[] args) {
+		Congty a = new Congty();
+		/*
+		 * if(a.readFileNhanVien()==null) { System.out.println("CMM"); }
+		 */
+		System.out.println("CMM");
+	}
+
+}

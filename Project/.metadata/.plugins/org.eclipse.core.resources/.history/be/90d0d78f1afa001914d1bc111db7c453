@@ -1,0 +1,11 @@
+
+public class XuLy {
+
+	public static void main(String[] args) {
+		Congty a=new Congty();
+		a.inPutFile();
+		//Tim nhan vien lam nhieu nhiem vu nhat cong ty
+		a.nhanVienNhieuNVNhat();
+	}
+
+}

@@ -1,0 +1,20 @@
+001 # Nguyen Van A # 1990 # nguyenvana@gmail.com # 09134 # PB01 # Truong Phong # 70 
+002 # Nguyen Van B # 1992 # nguyenvanb@gmail.com # 09234 # PB02 # Nhan Vien # 60
+003 # Tran Van C # 1998 # tranvanc@gmail.com # 09334 # PB02 # Nhan Vien # 80
+004 # Le Van X # 1993 # levanx@gmail.com # 09134 # PB01 # Nhan Vien # 54
+005 # Nguyen Tien Anh # 2000 # anhbren@gmail.com # 09834 # PB02 # Truong Phong # 92
+006 # Le Lan # 1992 # lelan@gmail.com # 09834 # PB02 # Nhan Vien # 65.4
+007 # Phan Huy # 1999 # phanhuy@gmail.com # 09834 # PB03 # Nhan Vien # 12
+008 # Tran Tu # 1990 # trantu@gmail.com # 09834 # PB03 # Truong Phong #11.5
+009 # Pham Heo # 1994 # phamheo@gmail.com # 09834 # PB02 # Nhan Vien # 49
+010 # Ma Van Ga # 1995 # mavanga@gmail.com # 09834 # PB01 # Nhan Vien # 76
+011 # Le Thi Ngua # 1992 # lethingua@gmail.com # 09834 # PB03 # Nhan Vien # 22
+012 # Tran Tam # 1991 # trantam@gmail.com # 09834 # PB04 # Nhan Vien # 43
+013 # Le Hai # 1996 # lehai@gmail.com # 09834 # PB04 # Truong Phong # 63
+014 # Nguyen Yasuo # 1994 # nguyenyasuo@gmail.com # 09834 # PB04 # Nhan Vien # 34
+015 # Le Thi Zed # 1990 # lethized@gmail.com # 09834 # PB04 # Nhan Vien # 22.5
+016 # Tan Hai # 1993 # tanhai@gmail.com # 09834 # PB05 # Nhan Vien # 19
+017 # Ha Thi Xinh # 1991 # hathixinh@gmail.com # 09834 # PB01 # Nhan Vien # 65
+018 # Ngo Cong # 1994 # ngocong@gmail.com # 09834 # PB05 # Nhan Vien # 54
+019 # Lam Le # 1993 # lamle@gmail.com # 09834 # PB05 # Nhan Vien # 23
+020 # Nguyen Nhan # 1994 # nguyennhan@gmail.com # 09834 # PB05 # Truong Phong #58

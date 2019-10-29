@@ -1,0 +1,8 @@
+public interface Nhapxuat {
+
+	default void Nhap() {
+		//TODO
+	};
+	void Xuat();
+
+}

@@ -1,0 +1,30 @@
+import java.util.LinkedList;
+
+public class Truongphong extends Nhanvien {
+	protected String poSiTion;
+	@Override
+	public Truongphong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB,
+			LinkedList<Nhiemvu> dsNhiemVu, String string) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB, dsNhiemVu);
+		this.poSiTion = string;
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	@Override
+	public Truongphong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	public String getPoSiTion() {
+		return poSiTion;
+	}
+
+	public void setPoSiTion(String poSiTion) {
+		this.poSiTion = poSiTion;
+	}
+
+}

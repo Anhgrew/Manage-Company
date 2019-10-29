@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+
+public class Nhanvienthuong extends Nhanvien {
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Nhanvienthuong(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB,
+			LinkedList<Nhiemvu> dsNhiemVu) {
+		super(maNV, tenNV, namSinh, email, soDT, maPB, dsNhiemVu);
+		// TODO Auto-generated constructor stub
+	}
+	public void readFileNhanVienThuong() {
+		try {
+			FileReader reader = new FileReader("src/DSNV.txt");
+			BufferedReader bufferedReader = new BufferedReader(reader);
+			String line;
+			while ((line = bufferedReader.readLine()) != null) {
+				String[] listInfo = line.split(" # ");
+				Nhanvienthuong nhanVienThuong = new Nhanvienthuong(listInfo[0], listInfo[1], Integer.parseInt(listInfo[2]),
+						listInfo[3], listInfo[4], listInfo[5]);
+				reader.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+}

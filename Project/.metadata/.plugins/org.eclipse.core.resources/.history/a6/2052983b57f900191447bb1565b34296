@@ -1,0 +1,102 @@
+
+import java.util.LinkedList;
+
+public abstract class Nhanvien implements Nhapxuat {
+
+	private String maNV;
+	private String tenNV;
+	private int namSinh;
+	private String email;
+	private String soDT;
+	private String maPB;
+	private LinkedList<String> dsNhiemVu;
+	
+
+
+	public String getMaNV() {
+		return maNV;
+	}
+
+	public void setMaNV(String maNV) {
+		this.maNV = maNV;
+	}
+
+	public String getTenNV() {
+		return tenNV;
+	}
+
+	public void setTenNV(String tenNV) {
+		this.tenNV = tenNV;
+	}
+
+	public int getNamSinh() {
+		return namSinh;
+	}
+
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSoDT() {
+		return soDT;
+	}
+
+	public void setSoDT(String soDT) {
+		this.soDT = soDT;
+	}
+
+	public String getMaPB() {
+		return maPB;
+	}
+
+	public void setMaPB(String maPB) {
+		this.maPB = maPB;
+	}
+
+	public LinkedList<String> getDsNhiemVu() {
+		return dsNhiemVu;
+	}
+
+	@Override
+	public void Nhap() {
+	
+	}
+
+	public void setDsNhiemVu(LinkedList<String> dsNhiemVu) {
+		this.dsNhiemVu = dsNhiemVu;
+	}
+
+	
+	public Nhanvien(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB,
+			LinkedList<String> dsNhiemVu) {
+		super();
+		this.maNV = maNV;
+		this.tenNV = tenNV;
+		this.namSinh = namSinh;
+		this.email = email;
+		this.soDT = soDT;
+		this.maPB = maPB;
+		this.dsNhiemVu = dsNhiemVu;
+	}
+
+	@Override
+	public void Xuat() {
+		System.out.println("|Ma nhan vien: " + this.getMaNV() + "|Ten nhan vien: " + this.getTenNV() + "|Nam sinh: "
+				+ this.getNamSinh() + "|Email: " + this.getEmail() + "|So Dien Thoai: " + this.getSoDT()
+				+ "|Ma Phong Ban: " + this.getMaPB());
+		String tmp = "";
+		for (Nhiemvu nhiemvu : dsNhiemVu) {
+			tmp += ("Ma nhiem vu: " + nhiemvu.getMaNV() + "--" + "Ten nhiem vu: " + nhiemvu.getTenNhiemVu());
+		}
+		System.out.println(tmp);
+		throw new UnsupportedOperationException();
+	}
+}

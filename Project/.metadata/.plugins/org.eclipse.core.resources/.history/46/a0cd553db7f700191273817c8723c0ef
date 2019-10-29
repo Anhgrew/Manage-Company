@@ -1,0 +1,128 @@
+import java.util.LinkedList;
+
+public abstract class Nhanvien implements Nhapxuat {
+
+	private String maNV;
+	private String tenNV;
+	private int namSinh;
+	private String email;
+	private String soDT;
+	private String maPB;
+	private LinkedList<Nhiemvu> dsNhiemVu;
+
+	public String getMaNV() {
+		return this.maNV;
+	}
+
+	/**
+	 * 
+	 * @param maNV
+	 */
+	public void setMaNV(String maNV) {
+		this.maNV = maNV;
+	}
+
+	public String getTenNV() {
+		return this.tenNV;
+	}
+
+	/**
+	 * 
+	 * @param tenNV
+	 */
+	public void setTenNV(String tenNV) {
+		this.tenNV = tenNV;
+	}
+
+	public Nhanvien(String maNV, String tenNV, int namSinh, String email, String soDT, String maPB,
+			LinkedList<Nhiemvu> dsNhiemVu) {
+		super();
+		this.maNV = maNV;
+		this.tenNV = tenNV;
+		this.namSinh = namSinh;
+		this.email = email;
+		this.soDT = soDT;
+		this.maPB = maPB;
+		this.dsNhiemVu = dsNhiemVu;
+	}
+
+	public int getNamSinh() {
+		return this.namSinh;
+	}
+
+	/**
+	 * 
+	 * @param namSinh
+	 */
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+
+	public String getSoDT() {
+		return this.soDT;
+	}
+
+	/**
+	 * 
+	 * @param soDT
+	 */
+	public void setSoDT(String soDT) {
+		this.soDT = soDT;
+	}
+
+	public String getMaPB() {
+		return this.maPB;
+	}
+
+	/**
+	 * 
+	 * @param maPB
+	 */
+	public void setMaPB(String maPB) {
+		this.maPB = maPB;
+	}
+
+	public LinkedList<Nhiemvu> getDsNhiemVu() {
+		return this.dsNhiemVu;
+	}
+
+	/**
+	 * 
+	 * @param dsNhiemVu
+	 */
+	public void setDsNhiemVu(LinkedList<Nhiemvu> dsNhiemVu) {
+		this.dsNhiemVu = dsNhiemVu;
+	}
+
+	@Override
+	public void Nhap() {
+		// TODO - implement Nhanvien.Nhap
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void Xuat() {
+		System.out.println("|Ma nhan vien: " + this.getMaNV() + "|Ten nhan vien: " + this.getTenNV() + "|Nam sinh: "
+				+ this.getNamSinh() + "|Email: " + this.getEmail() + "|So Dien Thoai: " + this.getSoDT()
+				+ "|Ma Phong Ban: " + this.getMaPB());
+		String tmp = "";
+		for (Nhiemvu nhiemvu : dsNhiemVu) {
+			tmp += ("Ma nhiem vu: " + nhiemvu.getMaNV() + "--" + "Ten nhiem vu: " + nhiemvu.getTenNhiemVu());
+		}
+		System.out.println(tmp);
+		throw new UnsupportedOperationException();
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	/**
+	 * 
+	 * @param email
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}
